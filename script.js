@@ -101,13 +101,23 @@ function initPortfolio() {
             }
         });
     }, {
-        threshold: 0.1, // Disparar cuando el 10% del elemento sea visible
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0,
+        rootMargin: '0px 0px 0px 0px'
     });
 
     revealElements.forEach(element => {
         revealOnScroll.observe(element);
     });
+
+    // Activar inmediatamente los elementos que ya están visibles en la pantalla al cargar
+    setTimeout(() => {
+        revealElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight + 100) {
+                element.classList.add('active');
+            }
+        });
+    }, 100);
 
     // ------------------------------------------
     // 4. LINK ACTIVO DING EN NAVBAR AL HACER SCROLL
