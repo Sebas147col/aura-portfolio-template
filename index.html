@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura — Portafolio Premium</title>
+    <meta name="description" content="Aura es una plantilla de portafolio ultra-premium diseñada para desarrolladores, diseñadores y creadores modernos. Consigue más clientes con un diseño sofisticado en modo oscuro.">
+    <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Fondo de Gradiantes Ambientales (Efecto Glow) -->
+    <div class="ambient-glows">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                Aura.
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-secondary nav-btn">Contrátame</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero (Inicio) -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal-hero" style="animation-delay: 0.1s;">
+                    <span class="pulse-dot"></span>
+                    Disponible para nuevos proyectos
+                </div>
+                <h1 class="hero-title reveal-hero" style="animation-delay: 0.25s;">
+                    Diseño interfaces que <br>
+                    <span class="gradient-text">conectan e inspiran</span>
+                </h1>
+                <p class="hero-subtitle reveal-hero" style="animation-delay: 0.4s;">
+                    Hola, soy un desarrollador frontend y diseñador UX/UI enfocado en crear experiencias web interactivas de primer nivel. Combino código limpio con estéticas de vanguardia.
+                </p>
+                <div class="hero-buttons reveal-hero" style="animation-delay: 0.55s;">
+                    <a href="#proyectos" class="btn btn-primary">
+                        Ver Trabajos 
+                        <i data-lucide="arrow-up-right" class="btn-icon"></i>
+                    </a>
+                    <a href="#contacto" class="btn btn-tertiary">Hablemos <i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal-hero" style="animation-delay: 0.7s;">
+                <div class="visual-card">
+                    <div class="card-header-mockup">
+                        <span class="dot-mockup"></span>
+                        <span class="dot-mockup"></span>
+                        <span class="dot-mockup"></span>
+                    </div>
+                    <div class="visual-code">
+                        <span class="code-line line-1"><span class="keyword">const</span> developer = {</span>
+                        <span class="code-line line-2">&nbsp;&nbsp;name: <span class="string">'Aura'</span>,</span>
+                        <span class="code-line line-3">&nbsp;&nbsp;skills: [<span class="string">'React'</span>, <span class="string">'Webflow'</span>, <span class="string">'CSS'</span>],</span>
+                        <span class="code-line line-4">&nbsp;&nbsp;passion: <span class="string">'Pixel Perfect UIs'</span></span>
+                        <span class="code-line line-5">};</span>
+                    </div>
+                    <!-- Elemento 3D / Gradiente animado interno -->
+                    <div class="visual-sphere"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="mouse-icon">
+                <span class="mouse-wheel"></span>
+            </span>
+            <span class="scroll-text">Haz scroll hacia abajo</span>
+        </div>
+    </section>
+
+    <!-- Sección de Logros / Métricas Rápidas -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item reveal">
+                <h3 class="stat-number">5+</h3>
+                <p class="stat-label">Años de experiencia</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 class="stat-number">40+</h3>
+                <p class="stat-label">Proyectos completados</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 class="stat-number">99%</h3>
+                <p class="stat-label">Clientes satisfechos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Trabajos Destacados</h2>
+                <p class="section-desc">Una selección de proyectos recientes donde se unen diseño estético y funcionalidad.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Tarjeta de Proyecto 1 -->
+                <article class="project-card reveal">
+                    <div class="project-image-wrapper">
+                        <!-- Reemplazaremos esto con un gradiente de diseño ultra-moderno o imagen de la herramienta -->
+                        <div class="project-visual bg-gradient-purple">
+                            <span class="project-mockup-tag">SaaS Dashboard</span>
+                        </div>
+                        <a href="#" class="project-link" aria-label="Ver proyecto">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Tailwind</span>
+                            <span>Framer Motion</span>
+                        </div>
+                        <h3 class="project-card-title">Nebula Platform</h3>
+                        <p class="project-card-desc">Plataforma de análisis de datos con renderizado en tiempo real y paneles personalizables.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Proyecto 2 -->
+                <article class="project-card reveal">
+                    <div class="project-image-wrapper">
+                        <div class="project-visual bg-gradient-cyan">
+                            <span class="project-mockup-tag">E-commerce App</span>
+                        </div>
+                        <a href="#" class="project-link" aria-label="Ver proyecto">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Shopify API</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <h3 class="project-card-title">Nova Store</h3>
+                        <p class="project-card-desc">Tienda en línea minimalista con transiciones fluidas de página y pasarela integrada.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Proyecto 3 -->
+                <article class="project-card reveal">
+                    <div class="project-image-wrapper">
+                        <div class="project-visual bg-gradient-rose">
+                            <span class="project-mockup-tag">Mobile Interface</span>
+                        </div>
+                        <a href="#" class="project-link" aria-label="Ver proyecto">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>React Native</span>
+                            <span>Redux</span>
+                        </div>
+                        <h3 class="project-card-title">Vortex App</h3>
+                        <p class="project-card-desc">Aplicación móvil de productividad con gestos interactivos avanzados y diseño ergonómico.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia y Habilidades -->
+    <section id="experiencia" class="experience-section">
+        <div class="container">
+            <div class="experience-layout">
+                
+                <!-- Columna Izquierda: Habilidades -->
+                <div class="skills-column reveal">
+                    <span class="section-tag">Habilidades</span>
+                    <h2 class="section-title">Mi Caja de Herramientas</h2>
+                    <p class="section-desc">Tecnologías y herramientas que domino para dar vida a proyectos digitales complejos.</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-pill">
+                            <i data-lucide="code-2" class="skill-icon"></i>
+                            <span>HTML5 / CSS3</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i data-lucide="terminal" class="skill-icon"></i>
+                            <span>Javascript (ES6+)</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i data-lucide="atom" class="skill-icon"></i>
+                            <span>React / Next.js</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i data-lucide="palette" class="skill-icon"></i>
+                            <span>Figma UX/UI</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i data-lucide="git-branch" class="skill-icon"></i>
+                            <span>Git & Github</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i data-lucide="layers" class="skill-icon"></i>
+                            <span>Astro / Static Sites</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Cronología -->
+                <div class="timeline-column reveal">
+                    <span class="section-tag">Trayectoria</span>
+                    <h2 class="section-title">Experiencia Laboral</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2024 — Presente</span>
+                            <h3 class="timeline-role">Lead Frontend Developer</h3>
+                            <p class="timeline-company">Helix Studios</p>
+                            <p class="timeline-text">Dirección del desarrollo de interfaces para startups internacionales. Implementación de sistemas de diseño escalables.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2022 — 2024</span>
+                            <h3 class="timeline-role">UI/UX Designer & Dev</h3>
+                            <p class="timeline-company">Quantum Tech</p>
+                            <p class="timeline-text">Creación y codificación de layouts complejos. Incremento del 35% en conversión de usuarios optimizando la UX.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2020 — 2022</span>
+                            <h3 class="timeline-role">Desarrollador Junior</h3>
+                            <p class="timeline-company">Pixel Agency</p>
+                            <p class="timeline-text">Desarrollo inicial de páginas web interactivas y mantención de sitios web en WordPress y Shopify.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-header reveal">
+                <span class="section-tag">Conectemos</span>
+                <h2 class="section-title">¿Tienes un gran <br><span class="gradient-text">proyecto en mente?</span></h2>
+                <p class="section-desc">Estoy disponible para trabajos freelance y contratos a tiempo parcial. Escríbeme y hagamos realidad tu idea.</p>
+                
+                <div class="contact-details">
+                    <a href="mailto:hola@tuemail.com" class="contact-link">
+                        <i data-lucide="mail"></i>
+                        <span>hola@tuemail.com</span>
+                    </a>
+                    <a href="tel:+34600000000" class="contact-link">
+                        <i data-lucide="phone"></i>
+                        <span>+34 600 000 000</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-card reveal">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Tu mensaje</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Enviar mensaje 
+                        <i data-lucide="send" class="btn-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-copy">© 2026 Aura Template. Creado para brillar.</p>
+            <div class="footer-socials">
+                <a href="#" class="social-icon" aria-label="Github"><i data-lucide="github"></i></a>
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification (Mensaje Enviado) -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle" class="toast-icon"></i>
+        <span>¡Mensaje enviado con éxito! Nos vemos pronto.</span>
+    </div>
+
+    <!-- Script de lógica e interacciones -->
+    <script src="script.js"></script>
+</body>
+</html>
